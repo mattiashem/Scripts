@@ -1,0 +1,3 @@
+www.fareoffice.com CNAME
+www.elino.se A
+www.asylguiden.se A

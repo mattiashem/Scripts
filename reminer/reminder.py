@@ -68,7 +68,7 @@ def send_oncall():
     
     
     
-    message = """From: SYCO <noreply@fareoffice.com>
+    message = """From: SYCO <noreply@elino.se>
     To: SYSOP
     Subject: {0} IS NOW ONCALL
     

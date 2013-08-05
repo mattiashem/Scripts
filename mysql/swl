@@ -1,0 +1,11 @@
+delete from Syslog where id IN (SELECT id from view_SystemEvents_compact WHERE MATCH message AGAINST ('ossec') LIMIT 100);
+
+delete from Syslog where id IN (SELECT id from view_SystemEvents_compact WHERE MATCH message AGAINST ('ossec') LIMIT 100);
+
+select * from SystemEvents where id IN (SELECT id from SystemEvents WHERE MATCH message AGAINST ('ossec') LIMIT 100) LIMIT 200;
+
+
+
+SELECT v.* from view_SystemEvents_compact v LEFT JOIN Exclude e ON (MATCH v.Message AGAINST ('ossec')) WHERE e.exclude IS NULL AND v.DeviceReportedTime BETWEEN '2013-06-02 00:00:00' AND '2013-06-02 23:59:59'
+
+
